@@ -134,3 +134,4 @@ D:\ASP.net\StudentPortal\StudentPortal\bin\Debug\net8.0\runtimes\win\lib\net6.0\
 D:\ASP.net\StudentPortal\StudentPortal\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\ASP.net\StudentPortal\StudentPortal\obj\Debug\net8.0\StudentPortal.csproj.AssemblyReference.cache
 D:\ASP.net\StudentPortal\StudentPortal\obj\Debug\net8.0\StudentP.09900977.Up2Date
+D:\ASP.net\StudentPortal\StudentPortal\obj\Debug\net8.0\StudentPortal.sourcelink.json

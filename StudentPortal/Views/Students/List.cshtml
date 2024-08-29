@@ -3,7 +3,8 @@
 *@
 @{
 }
-@model StudentPortal.Models.Entities.Student
+
+@model List<StudentPortal.Models.Entities.Student>
 <h1>Student</h1>
 
 <table class="table">
@@ -21,10 +22,17 @@
     <tbody>
         @foreach(var Student in Model)
         {
-            <TR>
-              <td></td>  
+            <tr>
+                <td>@Student.Id</td>
+                <td>@Student.Name</td>
+                <td>@Student.email</td>
+                <td>@Student.phone</td>
+                <td>@Student.city</td>
+                <td>
 
-            </TR>
+                    <a class="btn btn-primary" asp-controller ="Students" asp-action="edit" asp-route-id="@Student.Id">Edit</a>
+                </td>
+            </tr>
         }
 
 

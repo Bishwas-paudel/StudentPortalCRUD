@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model StudentPortal.Models.Entities.Student
+
+<h1>Edit Student</h1>
+@if(Model is null)
+{
+    <p> no stydent</p>
+}
+else{
+<form method="post">
+
+    <div class="mt-3">
+        <label class="form-label">ID</label>
+        <input type="text" name="ifd"  class="form-control"  asp-for="Id"  readonly/>
+
+
+
+    </div>
+
+
+    <div class="mt-3">
+        <label class="form-label">NAME:</label>
+        <input type="text" name="name"  class="form-control" asp-for="Name" />
+
+
+
+    </div>
+    <div class="mt-3">
+        <label class="form-label">Email:</label>
+        <input type="email" name="email"  class="form-control"  asp-for="email" />
+    </div>
+    <div class="mt-3">
+        <label class="form-label">Phone:</label>
+        <input type="text" name="phone"  class="form-control"  asp-for="phone" />
+    </div>
+    <div class="mt-3">
+        <label class="form-label">City</label>
+        <input type="text" name="city"  class="form-control"  asp-for="city" />
+    </div>
+    <div class="mt-3">
+        <button type="submit" class=" ="btn btn-primary" style="background-color:deepskyblue">SAVE</button>
+    </div>
+        <div class="mt-3">
+            <button type="submit" class=" ="btn btn-danger" ms-3
+            asp-action="Delete"
+            asp-controller="Students"
+            
+            >Delete</button>
+        </div>
+</form>
+}
